@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#F7F8FA">
+    <meta name="description" content="Review your Mulch monthly subscription and separate revenue-based usage fee, then complete your payment through Whop.">
+    <title>Subscription checkout — Mulch</title>
+    <link rel="icon" href="/brand-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/assets/checkout.css">
+    <script src="/assets/checkout-core.js" defer></script>
+    <script src="/assets/checkout.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#checkout">Skip to checkout</a>
+
+    <header class="site-header">
+      <a class="brand" href="https://mulchcheckout.com/" aria-label="Mulch home">
+        <img src="/brand-mark.svg" width="38" height="38" alt="">
+        <span class="brand-wordmark">mulch<span class="brand-dot">.</span></span>
+      </a>
+      <a class="back-link" href="https://mulchcheckout.com/#pricing">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m11.5 5-5 5 5 5M7 10h9"/></svg>
+        Back to plans
+      </a>
+    </header>
+
+    <main id="checkout" class="checkout-layout">
+      <section class="plan-summary" aria-labelledby="checkout-title">
+        <div class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> A little more room to grow</div>
+        <h1 id="checkout-title">Your money, when you need it</h1>
+        <p class="hero-description">Make room for what’s next. Choose your Mulch subscription and take the next step for your store.</p>
+
+        <section class="summary-details" aria-labelledby="summary-title">
+          <div class="summary-heading">
+            <h2 id="summary-title">Your subscription</h2>
+            <span class="billing-pill">Billed monthly</span>
+          </div>
+          <div class="selected-plan"><span data-summary-plan>Standard</span><span class="plan-caption">Mulch membership</span></div>
+          <div class="price-line"><span class="summary-price" data-summary-price>$89.99</span><span class="price-period">/ month</span></div>
+          <p class="price-context">USD per store · Monthly plan price</p>
+          <ul class="summary-features" data-summary-features aria-label="Selected plan details">
+            <li>Monthly subscription for one client store</li>
+            <li>Separate revenue-based usage billing</li>
+          </ul>
+          <aside class="usage-note" aria-labelledby="usage-title">
+            <div class="usage-note-heading">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.25"/><path d="M10 9v4M10 6.5v.1"/></svg>
+              <h3 id="usage-title">A separate usage fee</h3>
+              <span class="usage-rate">0.5%</span>
+            </div>
+            <p>0.5% of every dollar of client-store revenue processed using Mulch, including tax. Billed separately and <strong>not added to this monthly checkout.</strong></p>
+          </aside>
+        </section>
+        <p class="onboarding-note">Payment is one step. Service onboarding is separate; completing checkout does not automatically activate the service.</p>
+      </section>
+
+      <section class="checkout-column" aria-labelledby="payment-heading">
+        <div class="checkout-card">
+          <div class="checkout-card-header">
+            <div class="step-indicator" aria-label="Review your plan, then pay through Whop">
+              <span class="step-current"><span class="step-number">01</span> Review</span>
+              <span class="step-connector" aria-hidden="true"></span>
+              <span><span class="step-number">02</span> Payment</span>
+            </div>
+            <h2 id="payment-heading">Let’s make it official</h2>
+            <p class="card-intro">Select your plan. Review the details. Continue to Whop to complete your subscription.</p>
+          </div>
+
+          <noscript>
+            <p class="status is-error noscript-notice">JavaScript is required to load plan availability and the Whop payment form. Please enable JavaScript before continuing.</p>
+          </noscript>
+
+          <form data-subscription-form aria-label="Review your Mulch subscription">
+            <fieldset class="plan-selector">
+              <legend>Choose your monthly plan</legend>
+              <div class="plan-options">
+                <button class="plan-option" type="button" data-plan-select="standard" aria-pressed="true">
+                  <span class="plan-option-top"><span class="plan-name">Standard</span><span class="selection-dot" aria-hidden="true"></span></span>
+                  <span class="option-price">$89.99<span> / mo</span></span>
+                  <span class="option-context">USD per store</span>
+                </button>
+                <button class="plan-option" type="button" data-plan-select="premium" aria-pressed="false">
+                  <span class="plan-option-top"><span class="plan-name">Premium</span><span class="selection-dot" aria-hidden="true"></span></span>
+                  <span class="option-price">$179.99<span> / mo</span></span>
+                  <span class="option-context">USD per store</span>
+                </button>
+              </div>
+            </fieldset>
+            <p class="status plan-status" data-plan-status role="status" aria-live="polite" aria-atomic="true">Loading plan availability…</p>
+
+            <div class="checkout-divider" aria-hidden="true"></div>
+            <div class="review-copy">
+              <h3>Before you continue</h3>
+              <p>Whop determines and displays the actual first charge, any applicable taxes, renewal schedule and payment terms. Please review those details before paying.</p>
+            </div>
+            <label class="acknowledgement">
+              <input type="checkbox" name="acknowledge" required>
+              <span>I understand the selected recurring plan and the separate revenue-based usage fee. I will confirm the amount due today, renewal schedule and terms in Whop.</span>
+            </label>
+            <button class="continue-button" type="submit" data-continue disabled>
+              <span>Continue to secure payment</span>
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg>
+            </button>
+          </form>
+
+          <p class="status whop-status" data-whop-status role="status" aria-live="polite" aria-atomic="true"></p>
+
+          <section class="whop-panel" data-whop-panel hidden aria-labelledby="whop-heading">
+            <div class="embedded-heading">
+              <h3 id="whop-heading">Complete your subscription</h3>
+              <span class="provider-label">Whop checkout</span>
+            </div>
+            <div id="mc-whop-checkout" data-whop-container></div>
+            <button class="text-button close-payment" type="button" data-retry-whop hidden>Close payment form</button>
+          </section>
+
+          <section class="payment-notice" data-payment-notice hidden aria-labelledby="payment-notice-title">
+            <h3 id="payment-notice-title" data-payment-title>Review your payment status</h3>
+            <p data-payment-message></p>
+            <button class="notice-button" type="button" data-review-again>Review plans again</button>
+          </section>
+
+          <div class="provider-note">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="5" y="9" width="10" height="8" rx="2"/><path d="M7 9V6a3 3 0 0 1 6 0v3M10 12v2"/></svg>
+            <div><p>Payments powered by <strong>Whop</strong></p><span>Your payment details are handled by Whop.</span></div>
+          </div>
+          <p class="provider-details">Whop may show its own branding or request sign-in. Available payment methods, including Apple Pay, depend on your device and the checkout domain.</p>
+        </div>
+        <div class="checkout-help"><span>Have a question before you commit?</span><a href="https://mulchcheckout.com/">Visit Mulch <span aria-hidden="true">↗</span></a><a data-support-link hidden>Contact support</a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Mulch <span class="footer-separator" aria-hidden="true">/</span> Built for your next chapter.</p>
+      <nav aria-label="Legal"><a data-terms-link hidden>Terms</a><a data-privacy-link hidden>Privacy</a><span class="footer-label">Subscription checkout</span></nav>
+    </footer>
+  </body>
+</html>
