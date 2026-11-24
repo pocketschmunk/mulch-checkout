@@ -124,11 +124,11 @@ In Whop, open **Websites**, add/select **`pay.mulchcheckout.com`**, then use **F
 
 ## 8. Verify real plan billing and finish Shopify routing
 
-Whop must show Standard **$89.99 USD monthly per store** and Premium **$179.99 USD monthly per store**, with your intended amount due today, taxes, recurring schedule and cancellation terms. Your earlier CSV had a 30-day interval and a $0 initial-price field, so verify the actual provider form before accepting subscriptions. Displayed marketing prices cannot override Whop's billing settings. [8]
+Whop must show Standard **$150 USD monthly per store** and Premium **$250 USD monthly per store**, with your intended amount due today, taxes, recurring schedule and cancellation terms. On November 23, 2026 the owner confirmed pricing was already updated in Whop; this source revision retains the same public plan IDs and does not migrate existing memberships or submit charges. If new plans were created, map their new public IDs instead. Your earlier CSV had a 30-day interval and a $0 initial-price field, so verify the actual provider form before accepting subscriptions. Displayed marketing prices cannot override Whop's billing settings. [8]
 
 The separate **0.5% fee on processed client-store revenue including tax** is not calculated or collected by this fixed subscription checkout. It needs its own future ledger/invoicing. Payment completion does not create dashboard access or connect client stores; verified Whop records and a separate onboarding process are still required.
 
-Only after the Render domain and Whop checkout work, upload/use the separate **v5 Shopify theme ZIP** as an unpublished theme and enable **Theme settings → Whop checkout → Use branded checkout on pay.mulchcheckout.com**. Preserve current live customizations when migrating. Test Standard and Premium buttons in the unpublished theme, then publish the intended theme. They should go to:
+Only after the Render domain and Whop checkout work, upload/use the separate **v6 Shopify theme ZIP** as an unpublished theme and enable **Theme settings → Whop checkout → Use branded checkout on pay.mulchcheckout.com**. Preserve current live customizations when migrating. Test Standard and Premium buttons in the unpublished theme, then publish the intended theme. They should go to:
 
 ```text
 https://pay.mulchcheckout.com/?plan=standard

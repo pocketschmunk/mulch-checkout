@@ -11,9 +11,9 @@ const core = context.MulchCheckout;
 const config = publicConfig({});
 
 test('plans retain exact two prices and supplied public identifiers', () => {
-  assert.equal(core.validatePlan(config, 'standard').amountMinor, 8999);
+  assert.equal(core.validatePlan(config, 'standard').amountMinor, 15000);
   assert.equal(core.validatePlan(config, 'standard').whopPlanId, 'plan_GcWXKubnKvKib');
-  assert.equal(core.validatePlan(config, 'premium').amountMinor, 17999);
+  assert.equal(core.validatePlan(config, 'premium').amountMinor, 25000);
   assert.equal(core.validatePlan(config, 'premium').whopPlanId, 'plan_HchAp18dt8rm5');
   assert.throws(() => core.planDetails('__proto__'));
   assert.throws(() => core.planDetails('pro'));

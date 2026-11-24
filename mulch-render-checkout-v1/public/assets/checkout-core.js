@@ -2,9 +2,9 @@
   'use strict';
   const SDK_URL = 'https://cdn.whop.com/elements/amber/elements.js';
   const PLANS = Object.freeze({
-    standard: Object.freeze({ code: 'standard', name: 'Standard', amountMinor: 8999,
+    standard: Object.freeze({ code: 'standard', name: 'Standard', amountMinor: 15000,
       features: ['Branded checkout tools', 'Shopify order synchronization', 'Upsells, refunds and conversion reporting'] }),
-    premium: Object.freeze({ code: 'premium', name: 'Premium', amountMinor: 17999,
+    premium: Object.freeze({ code: 'premium', name: 'Premium', amountMinor: 25000,
       features: ['Everything in Standard', 'Customer subscriptions and self-service controls', 'Payment recovery and MRR reporting'] })
   });
   function planDetails(code) {

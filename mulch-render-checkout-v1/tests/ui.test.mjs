@@ -29,7 +29,7 @@ test('headline, exact selected price and disclosure render; no SDK request befor
   const state = await boot();
   try {
     assert.ok(state.doc.body.textContent.includes('Your money, when you need it'));
-    assert.equal(state.doc.querySelector('[data-summary-price]').textContent, '$89.99');
+    assert.equal(state.doc.querySelector('[data-summary-price]').textContent, '$150.00');
     assert.ok(state.doc.body.textContent.includes('0.5%'));
     assert.equal(state.doc.querySelector('[data-continue]').disabled, true);
     assert.equal(state.captured.length, 0);
@@ -53,7 +53,7 @@ test('switching plans destroys mount and clears consent', async () => {
     state.doc.querySelector('[data-plan-select=premium]').click();
     assert.equal(state.captured[0].destroyed, true);
     assert.equal(state.doc.querySelector('[name=acknowledge]').checked, false);
-    assert.equal(state.doc.querySelector('[data-summary-price]').textContent, '$179.99');
+    assert.equal(state.doc.querySelector('[data-summary-price]').textContent, '$250.00');
   } finally { state.dom.window.close(); }
 });
 test('forged success return is unverified and cannot automatically open a new checkout', async () => {
